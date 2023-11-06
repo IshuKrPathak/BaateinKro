@@ -1,15 +1,14 @@
-import React from "react";
+
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
 } from "@nextui-org/react";
 import { UserStore } from "../state/userStore";
 import { Models } from "appwrite";
 import LogoutModel from "./LogoutModel";
+import { Link } from "react-router-dom";
 
 export default function AppNavbar() {
   const user = UserStore(
@@ -18,7 +17,9 @@ export default function AppNavbar() {
   return (
     <Navbar>
       <NavbarBrand>
-        <p className="font-bold text-inherit">BaateinKaro</p>
+        <Link to="/">
+          <p className="font-bold text-inherit">BaateinKaro</p>
+        </Link>
       </NavbarBrand>
 
       <NavbarContent justify="end">
@@ -27,7 +28,7 @@ export default function AppNavbar() {
         </NavbarItem>
 
         <NavbarItem>
-         <LogoutModel/>
+          <LogoutModel />
         </NavbarItem>
       </NavbarContent>
     </Navbar>
