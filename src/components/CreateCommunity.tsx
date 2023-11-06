@@ -80,6 +80,4 @@ export default function CreateCommunity() {
     </>
   );
 }
-function then() {
-  throw new Error("Function not implemented.");
-}
+
