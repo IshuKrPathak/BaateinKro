@@ -24,7 +24,7 @@ export default function LogoutModel() {
 
     account
       .deleteSession(session.$id)
-      .then((res) => {
+      .then(() => {
         setLoading(false);
         navigate("/Login");
         toast.success("Logged out successfully. ", { theme: "colored" });
