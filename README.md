@@ -104,7 +104,7 @@ The Tech stack for this project include Vite + React ,NEXT UI , Appwrite Cloud ,
 
 
 
-- [Live Demo Link](https://baatein-kro.vercel.app/Login)
+- [Live Demo Link](https://baatein-kro.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
